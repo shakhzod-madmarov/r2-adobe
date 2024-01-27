@@ -8,6 +8,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      href="https://db.onlinewebfonts.com/c/056353a27c68233bab7e618c8b191d65?family=GothamPro"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/75e8975966c040d18b299029193d3b1f?family=Abel"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -27,10 +35,10 @@
           </ul>
           <ul class="nav__enter enter__list">
             <li class="enter__list-item">
-              <a href="#" class="enter__list-link">Войти</a>
+              <a href="#" class="enter__list-link login">Войти</a>
             </li>
             <li class="enter__list-item">
-              <a href="#" class="enter__list-link">Регистрация</a>
+              <a href="#" class="enter__list-link registration">Регистрация</a>
             </li>
           </ul>
         </nav>
@@ -38,33 +46,35 @@
     </header>
     <main class="main">
       <section class="hero">
-        <h1 class="herro__title">почему мы не используем coreldraw</h1>
+        <div class="container">
+          <h1 class="hero_title">почему мы не используем <br />coreldraw</h1>
+        </div>
         <img
           class="hero__img"
           src="images/virtual-reality-scenes-depicting-global-connection-00528-02.png"
           alt="tv"
         />
       </section>
-      <section class="reasons">
-        <div class="container">
-          <div class="reasons__lists">
-            <div class="reasons_inner">
-              <h2 class="reasons_title">
-                В мире дизайна мы сделали выбор в пользу Adobe, оставив за
-                бортом формат CorelDraw. Давайте разберем, почему именно Adobe
-                стал нашим надежным союзником в творчестве.
-              </h2>
-              <ul class="reasons__list">
-                <li class="reasons__list-item reasons">
-                  <div class="menu__list-inner">
-                    <h3 class="reasons_order">1</h3>
-                    <div class="reasons_info">
-                      <p class="reasons_text">
-                        Adobe - это компания, представляющая широкий спектр
-                        продуктов, среди которых вы, вероятно, знакомы с
-                        основными: 
-                      </p>
-                      <ul class="reasons_app app__list">
+      <section class="reasons container">
+        <div class="reasons_inner">
+          <div class="reasons_left">
+            <h2 class="reasons_title">
+              В мире дизайна мы сделали выбор в пользу Adobe, оставив за бортом
+              формат CorelDraw. Давайте разберем, почему именно Adobe стал нашим
+              надежным союзником в творчестве.
+            </h2>
+            <ul class="reasons__list">
+              <li class="reasons__list-item">
+                <div class="reasons__list-inner">
+                  <h3 class="reasons_order">1</h3>
+                  <div class="reasons_info">
+                    <p class="reasons_text">
+                      Adobe - это компания, представляющая широкий спектр
+                      продуктов, среди которых вы, вероятно, знакомы с
+                      основными: 
+                    </p>
+                    <div class="reasons_app">
+                      <ul class="app__list">
                         <li class="app__list-item">
                           <img
                             src="images/apps/ilustrator.png"
@@ -99,100 +109,114 @@
                           />
                         </li>
                       </ul>
-                      <p class="reasons-more">
+                      <a href="#" class="reasons-more">
                         а также более 90 других продуктов
-                      </p>
+                      </a>
                     </div>
                   </div>
-                  <p class="reasons_text">
-                    Более тысячи специалистов по всему миру активно участвуют в
-                    разработке и обеспечивают высокое качество продуктов и их
-                    разнообразные возможности. В то время как CorelDraw
-                    ограничивается только CorelDraw.
-                  </p>
-                </li>
-                <li class="reasons__list-item">
+                </div>
+                <p class="reasons_text">
+                  Более тысячи специалистов по всему миру активно участвуют в
+                  разработке и обеспечивают высокое качество продуктов и их
+                  разнообразные возможности. <br />
+                  <br />
+                  В то время как CorelDraw ограничивается только CorelDraw.
+                </p>
+              </li>
+              <li class="reasons__list-item">
+                <div class="reasons__list-inner">
                   <h3 class="reasons_order">2</h3>
                   <p class="reasons_text">
                     Поддержка CorelDraw практически отсутствует в Европе и США,
                     поскольку более 98% типографий в этих регионах не используют
                     данный формат.
                   </p>
-                </li>
-                <li class="reasons__list-item">
-                  <div class="menu__list-inner">
-                    <h3 class="reasons_order">3</h3>
-                    <div class="reasons_info">
-                      <p class="reasons_text">
-                        Главный недостаток CorelDraw заключается в
-                        преобразовании документа во внутренний формат bitmap.
-                        Это особенно заметно при обработке растровых
-                        изображений, где могут возникнуть различные артефакты,
-                        такие как неожиданные грани, изменение цветов или полная
-                        инверсия изображения.
-                      </p>
-                      <div>
-                        <img
-                          src="images/errors/CorelDRW_D3JGGZr4jt.png"
-                          alt="error 1"
-                        />
-                        <img
-                          src="images/errors/CorelDRW_gIEIFd6TrD.png"
-                          alt="error 2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <p class="reasons_text">
-                    В отличие от этого, Illustrator лишен подобных
-                    неожиданностей и обладает полной совместимостью с форматами
-                    PDF и EPS, необходимыми для полиграфии. Важно отметить, что,
-                    несмотря на возможность сохранения файлов в формате PDF,
-                    CorelDraw плохо распознает PDF файлы, что может привести к
-                    потере некоторых элементов макета. Поэтому при подготовке
-                    макета для офсетной полиграфии Illustrator остается
-                    оптимальным выбором.
-                  </p>
-                  <div class="reasons__list-imgs">
-                    <div class="reasons_compare">
+                </div>
+              </li>
+              <li class="reasons__list-item">
+                <div class="reasons__list-inner">
+                  <h3 class="reasons_order">3</h3>
+                  <div class="reasons_info">
+                    <p class="reasons_text">
+                      Главный недостаток CorelDraw заключается в преобразовании
+                      документа во внутренний формат bitmap. Это особенно
+                      заметно при обработке растровых изображений, где могут
+                      возникнуть различные артефакты, такие как неожиданные
+                      грани, изменение цветов или полная инверсия изображения.
+                    </p>
+                    <div class="reasons__list-inner-img">
                       <img
-                        src="images/reason3/GroupAdobePdf.svg"
-                        alt="adobe pdf"
-                      />
-                      <img src="images/reason3/Vector.svg" alt="left" />
-                      <img src="images/reason3/Vector1.svg" alt="right" />
-                    </div>
-                    <div class="reasons_ai">
-                      <img
-                        src="images/reason3/GroupAI.png"
-                        alt="adobe ilustrator"
+                        src="images/errors/CorelDRW_gIEIFd6TrD.png"
+                        alt="error 2"
                       />
                       <img
-                        src="images/reason3/буклет1.png"
-                        alt="adobe ilustrator page 1"
-                      />
-                      <img
-                        src="images/reason3/буклет2.png"
-                        alt="adobe ilustrator page 2"
-                      />
-                      <img
-                        src="images/reason3/буклет3.png"
-                        alt="adobe ilustrator page 3"
-                      />
-                    </div>
-                    <div class="reasons_coreldraw">
-                      <img
-                        src="images/reason3/GroupCorleDraw.png"
-                        alt="coreldraw"
-                      />
-                      <img
-                        src="images/reason3/coreldraw.png"
-                        alt="coreldraw project"
+                        src="images/errors/CorelDRW_D3JGGZr4jt.png"
+                        alt="error 1"
                       />
                     </div>
                   </div>
-                </li>
-                <li class="reasons__list-item">
+                </div>
+                <p class="reasons_text">
+                  В отличие от этого, Illustrator лишен подобных неожиданностей
+                  и обладает полной совместимостью с форматами PDF и EPS,
+                  необходимыми для полиграфии. Важно отметить, что, несмотря на
+                  возможность сохранения файлов в формате PDF, CorelDraw плохо
+                  распознает PDF файлы, что может привести к потере некоторых
+                  элементов макета. Поэтому при подготовке макета для офсетной
+                  полиграфии Illustrator остается оптимальным выбором.
+                </p>
+                <div class="reasons__list-imgs">
+                  <div class="reasons_compare">
+                    <img
+                      src="images/reason3/Vector.svg"
+                      alt="left"
+                      class="reasons_compare-left"
+                    />
+                    <img
+                      class="reasons_compare-adobe"
+                      src="images/reason3/GroupAdobePdf.svg"
+                      alt="adobe pdf"
+                    />
+                    <img
+                      src="images/reason3/Vector1.svg"
+                      alt="right"
+                      class="reasons_compare-right"
+                    />
+                  </div>
+                  <div class="reasons_compare-app">
+                    <img
+                      class="resons_compare-app-ai"
+                      src="images/reason3/GroupAI.png"
+                      alt="adobe ilustrator"
+                    />
+                    <img
+                      class="resons_compare-app-coreldraw"
+                      src="images/reason3/GroupCorleDraw.png"
+                      alt="coreldraw"
+                    />
+                  </div>
+                  <div class="reasons_projecrs">
+                    <img
+                      src="images/reason3/буклет1.png"
+                      alt="adobe ilustrator page 1"
+                    />
+                    <img
+                      src="images/reason3/буклет2.png"
+                      alt="adobe ilustrator page 2"
+                    />
+                    <img
+                      src="images/reason3/буклет3.png"
+                      alt="adobe ilustrator page 3"
+                    />
+                    <img
+                      src="images/reason3/coreldraw.png"
+                      alt="coreldraw project"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li class="reasons__list-item">
+                <div class="reasons__list-inner">
                   <h3 class="reasons_order">4</h3>
                   <p class="reasons_text">
                     Современная лицензия CorelDraw может оцениваться в 600
@@ -201,8 +225,10 @@
                     вынуждены использовать устаревшие версии программы, что
                     может привести к искаженному отображению контента.
                   </p>
-                </li>
-                <li class="reasons__list-item">
+                </div>
+              </li>
+              <li class="reasons__list-item">
+                <div class="reasons__list-inner">
                   <h3 class="reasons_order">5</h3>
                   <p class="reasons_text">
                     Обучение наших дизайнеров работе в CorelDraw требовало бы
@@ -210,135 +236,130 @@
                     к упадку, вкладывание человеческого капитала в него
                     становится неоправданно.
                   </p>
-                </li>
-              </ul>
-            </div>
-            <ul class="reasons__list-link">
-              <li class="reasons__list-item">
-                <img
-                  src="images/reasonsLinks/Rectangle1.png"
-                  alt="why do we not use coreldraw"
-                />
-                <a href="#" class="reasons_link"
-                  >почему мы не используем<b>CorelDraw</b>
-                  <img
-                    src="images/reasonsLinks/groupLink.svg"
-                    alt="link vector"
-                /></a>
-              </li>
-              <li class="reasons__list-item">
-                <img src="images/reasonsLinks/Rectangle2.png" alt="team" />
-                <a href="#" class="reasons_link"
-                  >в команде Creat работают<b>только лучшие</b>
-                  <img
-                    src="images/reasonsLinks/groupLink.svg"
-                    alt="link vector"
-                /></a>
-              </li>
-              <li class="reasons__list-item">
-                <img src="images/reasonsLinks/Rectangle3.png" alt="design" />
-                <a href="#" class="reasons_link"
-                  >откуда мы черпаем идеи<b>для дизайна</b>
-                  <img
-                    src="images/reasonsLinks/groupLink.svg"
-                    alt="link vector"
-                /></a>
-              </li>
-              <li class="reasons__list-item">
-                <img src="images/reasonsLinks/Rectangle4.png" alt="team" />
-                <a href="#" class="reasons_link"
-                  >в команде Creat работают<b>только лучшие</b>
-                  <img
-                    src="images/reasonsLinks/groupLink.svg"
-                    alt="link vector"
-                /></a>
+                </div>
               </li>
             </ul>
           </div>
-          <p class="reasons_text">
-            ​​Используя среду Adobe, мы вкладываемся в инновации, качество и
-            признание в мировом масштабе. Присоединяйтесь к нам в этом
-            увлекательном путешествии в мир творчества, где каждый проект
-            становится настоящим произведением искусства.
-          </p>
-        </div>
-      </section>
-      <section class="products">
-        <div class="swiper mySwiper">
-          <ul class="swiper-wrapper products__list">
-            <li class="swiper-slide products__list-item">
+          <ul class="reasons-link__list reasons-link">
+            <li class="reasons-link__item">
               <img
-                src="images/products/Коробка-для-столика-1.png"
-                alt="product 1 "
-                class="products__list-img"
+                class="reasons-link__img"
+                src="images/reasonsLinks/Rectangle1.png"
+                alt="why do we not use coreldraw"
               />
+              <a href="#" class="reasons__link"
+                ><p>почему мы не используем <b>CorelDraw</b></p>
+                <img src="images/reasonsLinks/groupLink.svg" alt="link vector"
+              /></a>
             </li>
-            <li class="swiper-slide products__list-item">
+            <li class="reasons-link__item">
               <img
-                src="images/products/Коробка-для-столика-2.png"
-                alt="product 2 "
-                class="products__list-img"
+                class="reasons-link__img"
+                src="images/reasonsLinks/Rectangle2.png"
+                alt="team"
               />
+              <a href="#" class="reasons__link"
+                ><p>в команде Creat работают<b>только лучшие</b></p>
+                <img src="images/reasonsLinks/groupLink.svg" alt="link vector"
+              /></a>
             </li>
-            <li class="swiper-slide products__list-item">
-              <img
-                src="images/products/Коробка-для-столика-3.png"
-                alt="product 3 "
-                class="products__list-img"
-              />
+            <li class="reasons-link__item">
+              <img src="images/reasonsLinks/Rectangle3.png" alt="design" />
+              <a href="#" class="reasons__link"
+                ><p>откуда мы черпаем идеи<b>для дизайна</b></p>
+                <img src="images/reasonsLinks/groupLink.svg" alt="link vector"
+              /></a>
             </li>
-            <li class="swiper-slide products__list-item">
-              <img
-                src="images/products/Коробка-для-столика-4.png"
-                alt="product 4 "
-                class="products__list-img"
-              />
-            </li>
-            <li class="swiper-slide products__list-item">
-              <img
-                src="images/products/Коробка-для-столика-5.png"
-                alt="product 5 "
-                class="products__list-img"
-              />
-            </li>
-            <li class="swiper-slide products__list-item">
-              <img
-                src="images/products/Коробка-для-столика-6.jpg"
-                alt="product 6 "
-                class="products__list-img"
-              />
-            </li>
-            <li class="swiper-slide products__list-item">
-              <img
-                src="images/products/Коробка-для-столика-7.png"
-                alt="product 7 "
-                class="products__list-img"
-              />
-            </li>
-            <li class="swiper-slide products__list-item">
-              <img
-                src="images/products/Коробка-для-столика-8.png"
-                alt="product 8 "
-                class="products__list-img"
-              />
-            </li>
-            <li class="swiper-slide products__list-item">
-              <img
-                src="images/products/Коробка-для-столика-9.png"
-                alt="product 9 "
-                class="products__list-img"
-              />
-            </li>
-            <li class="swiper-slide products__list-item">
-              <img
-                src="images/products/Коробка-для-столика-10.png"
-                alt="product 10 "
-                class="products__list-img"
-              />
+            <li class="reasons-link__item">
+              <img src="images/reasonsLinks/Rectangle4.png" alt="team" />
+              <a href="#" class="reasons__link"
+                ><p>в команде Creat работают<b>только лучшие</b></p>
+                <img src="images/reasonsLinks/groupLink.svg" alt="link vector"
+              /></a>
             </li>
           </ul>
         </div>
+        <p class="reasons_text">
+          ​​Используя среду Adobe, мы вкладываемся в инновации, качество и
+          признание в мировом масштабе. Присоединяйтесь к нам в этом
+          увлекательном путешествии в мир творчества, где каждый проект
+          становится настоящим произведением искусства.
+        </p>
       </section>
+      <div class="swiper mySwiper">
+        <ul class="swiper-wrapper products__list">
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-1.png"
+              alt="product 1 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-2.png"
+              alt="product 2 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-3.png"
+              alt="product 3 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-4.png"
+              alt="product 4 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-5.png"
+              alt="product 5 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-6.jpg"
+              alt="product 6 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-7.png"
+              alt="product 7 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-8.png"
+              alt="product 8 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-9.png"
+              alt="product 9 "
+              class="products__list-img"
+            />
+          </li>
+          <li class="swiper-slide products__list-item">
+            <img
+              src="images/products/Коробка-для-столика-10.png"
+              alt="product 10 "
+              class="products__list-img"
+            />
+          </li>
+        </ul>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
